@@ -1,5 +1,8 @@
 #include "hashing.h"
 
+// Original:
+// http://stackoverflow.com/a/12076862
+
 qint32 Hashing::hashPixmap(QPixmap pix)
 {
     QImage image = pix.toImage();

@@ -38,7 +38,6 @@ QString findThemeDir() {
     foreach(QString theme, themes) {
         foreach (QString ico_root, list) {
             QString path = QString("%1/%2/").arg(ico_root, theme);
-            printf("Checking " + path.toLatin1() + "\n");
             if (QFile::exists( path + "themerc" )) {
                 return path;
             }
@@ -63,7 +62,6 @@ void readConfig(QString theme_dir) {
             if (line.endsWith(':')) {
                 line.chop(1);
                 value = QIcon(theme_dir + line);
-                printf("Adding " + QString(theme_dir + line).toLatin1() + "\n");
             }
             else if (line.endsWith('!')) {
                 line.chop(1);
