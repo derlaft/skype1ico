@@ -15,7 +15,7 @@
 #   42
 #   247
 # 
-# If original icon is not handled by theme, it will be saved to ID-unknown.png file in the current theme directory
+# If original icon is not handled by theme, it will be saved to ~/.skype1ico/ID.png file
 
 #connecting icons
 connecting_4.png:

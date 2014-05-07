@@ -88,7 +88,7 @@ extern void QSystemTrayIcon::setIcon(const QIcon &icon) {
     qint32 key = Hashing::hashPixmap(pixmap);
 
     if (!replace.contains(key)) {
-        pixmap.save(theme_dir + key + "-unknown.png");
+        pixmap.save(QString(qgetenv("HOME")) + "/.skype1ico/" + QString::number(key) + ".png");
     }
 
     (this->*realSetIcon) (replace.value(key, icon));
