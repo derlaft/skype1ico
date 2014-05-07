@@ -7,6 +7,17 @@ A very simple LD_PRELOAD wrapper that replaces original skype icons with your ow
 
 Feel free to commit new icon themes!
 
+Compilation & Installation
+==========================
+
+First you need environment that's able to compile 32-bit code. You also need libX11 and Qt and headers for them.
+
+Run qmake -spec linux-g++-32 && make
+
+Then you will be able to start SkypeTab using LD_PRELOAD=`pwd`/libskype1ico.so skype
+
+Note, LD_PRELOAD requires full path to the library
+
 Usage
 =====
 
@@ -30,3 +41,4 @@ Theme name is set up in this priority:
   * ``default``
 
 If no theme can be accessed, skype will fall back to default icons. For futher informating about themes please check out ``KFaenza/themerc`` theme configuration file.
+
