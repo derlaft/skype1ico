@@ -22,3 +22,7 @@
 
 # Dolphin indexses
 .directory
+
+# Dev stuff
+*.pro.user
+Makefile
