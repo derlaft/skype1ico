@@ -1,3 +1,22 @@
+# Please avoid using tabs
+# Spaces are not stripped in filename lines
+#
+# 
+# Every original skype icon has a (pretty) unique id.
+# For example, if you want to replace icons with id 42 and 247 with a MEOW.PNG image, add this lines:
+# 
+# MEOW.PNG:
+#   42
+#   247
+# 
+# If you want to replace icon not with a image file, but with a system icon, use the following format:
+# 
+# im-user-online!
+#   42
+#   247
+# 
+# If original icon is not handled by theme, it will be saved to ID-unknown.png file in the current theme directory
+
 #connecting icons
 connecting_4.png:
   807144121
@@ -7,7 +26,6 @@ connecting_2.png:
   815385823
 connecting_1.png:
   1067544513
-#online icon
 online.png:
   276043342
 online-messages.png:
@@ -21,7 +39,6 @@ online-messages.png:
   1843821554
   2031837471
   2128619799
-#busy icon
 busy.png:
   1961085274
 busy-messages.png:
@@ -35,7 +52,6 @@ busy-messages.png:
   1067807426
   1635632935
   1772568259
-#away icon
 away.png:
   671897900
 away-messages.png:
