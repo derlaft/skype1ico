@@ -1,7 +1,3 @@
-### eqmake4 was here ###
-CONFIG -= debug_and_release debug
-CONFIG += release
-
 #-------------------------------------------------
 #
 # Project created by QtCreator 2014-03-18T23:59:05
@@ -35,5 +31,9 @@ unix {
 
     DEFINES += THEMES_DIR=\\\"$$THEMES/\\\"
     DEFINES += DEFAULT_THEME=\\\"kfaenza\\\"
-    INSTALLS += target themes
+
+    desktop.path = $$PREFIX/share/applications/
+    desktop.files += skype1ico.desktop
+
+    INSTALLS += target themes desktop
 }

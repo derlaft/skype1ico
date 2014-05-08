@@ -26,7 +26,7 @@ QString findThemeDir() {
     QStringList themes, list;
 
     themes << emptyDefault(qgetenv("SKYPE1ICO_THEME"), QIcon::themeName())
-           << "default";
+           << DEFAULT_THEME;
 
     list << qgetenv("HOME") + "/.local/share/skype1ico/"
          << THEMES_DIR;
@@ -55,8 +55,7 @@ void readConfig(QString theme_dir) {
 
         QIcon value;
 
-        while ( !in.atEnd() )
-        {
+        while ( !in.atEnd() ) {
             QString line = in.readLine();
 
             if (line.endsWith(':')) {

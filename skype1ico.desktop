@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Skype
+Comment=Skype Internet Telephony with fixed icon
+Exec=env LD_PRELOAD=libskype1ico.so PULSE_LATENCY_MSEC=60 skype %U
+Icon=skype
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;InstantMessaging;Telephony;
+MimeType=x-scheme-handler/skype;
+X-KDE-Protocols=skype
+
