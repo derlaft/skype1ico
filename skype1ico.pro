@@ -23,14 +23,19 @@ unix {
         PREFIX = /usr
     }
 
-    target.path = $$PREFIX/lib
+    # thanks dat arch maintainer
+    equals(QMAKE_HOST.arch, "x86_64") {
+        target.path = $$PREFIX/lib32
+    } else {
+        target.path = $$PREFIX/lib
+    }
 
     THEMES = $$PREFIX/share/skype1ico
     themes.path = $$THEMES
-    themes.files += kfaenza
+    themes.files += KFaenza KFaenza-Black KFaenza-Monochrome KFaenza-Ubuntu native
 
     DEFINES += THEMES_DIR=\\\"$$THEMES/\\\"
-    DEFINES += DEFAULT_THEME=\\\"kfaenza\\\"
+    DEFINES += DEFAULT_THEME=\\\"native\\\"
 
     desktop.path = $$PREFIX/share/applications/
     desktop.files += skype1ico.desktop
