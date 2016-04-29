@@ -32,7 +32,7 @@ unix {
 
     THEMES = $$PREFIX/share/skype1ico
     themes.path = $$THEMES
-    themes.files += KFaenza KFaenza-Black KFaenza-Monochrome KFaenza-Ubuntu native
+    themes.files += Breeze KFaenza KFaenza-Black KFaenza-Monochrome KFaenza-Ubuntu native
 
     DEFINES += THEMES_DIR=\\\"$$THEMES/\\\"
     DEFINES += DEFAULT_THEME=\\\"native\\\"
